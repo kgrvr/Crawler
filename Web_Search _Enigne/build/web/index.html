@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Trigger Crawler</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <div>
+            <form name="CrawlerForm" action="CrawlerServlet" method="post">
+                <header>
+                    <h1>Crawler</h1>
+                </header>
+                <table>
+                    <tr>
+                        <td>Seed address: <font color="red">*</font></td><td><input type="text" name="seedName" size="30"/></td> 
+                    </tr>
+                    <tr>
+                        <td>Search for word (Default null): </td><td><input type="text" name="wordName" size="30"/></td> 
+                    </tr>
+                    <tr>
+                        <td>Max pages crawling (Default 10): </td><td><input type="text" name="maxName" size="30"/> </td> 
+                    </tr>
+                </table>
+                <br><br>
+                <footer>
+                    <input type="submit" value="Start Crawling!"/>
+                </footer>
+            </form>
+        </div>
+    </center>
+</body>
+</html>
